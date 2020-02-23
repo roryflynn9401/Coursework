@@ -48,7 +48,7 @@ public class MoneyTransfer {
 				
 				System.out.println( "\tFrom accountNumber: " + bankClient.userAccounts.get(from).getAccountNumber());
 				System.out.println( "\ttFrom accountType: " + bankClient.userAccounts.get(from).getClass());
-				System.out.println( "\ttFrom accountVerified: " + bankClient.accountVerified.get( from ) );
+				System.out.println( "\ttFrom accountVerified: " + bankClient.userAccounts.get( from ).getVerified() );
 				System.out.println( "\ttFrom accountBalance: " + bankClient.userAccounts.get(from).getBalance() );
 			}
 		}
@@ -61,7 +61,7 @@ public class MoneyTransfer {
 
 				System.out.println( "\tTo accountNumber: " + bankClient.userAccounts.get(from).getAccountNumber());
 				System.out.println( "\ttTo accountType: " + bankClient.userAccounts.get(from).getClass());
-				System.out.println( "\ttTo accountVerified: " + bankClient.accountVerified.get( from ) );
+				System.out.println( "\ttTo accountVerified: " + bankClient.userAccounts.get( from ).getVerified() );
 				System.out.println( "\ttTo accountBalance: " + bankClient.userAccounts.get(from).getBalance() );
 			}
 		}

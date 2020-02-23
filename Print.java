@@ -21,7 +21,7 @@ public class Print {
 				
 				System.out.println( "\taccountNumber: " + bankClient.userAccounts.get(i).getAccountNumber());
 				System.out.println( "\taccountType: " + bankClient.userAccounts.get(i).getClass());
-				System.out.println( "\taccountVerified: " + bankClient.accountVerified.get( i ) );
+				System.out.println( "\taccountVerified: " + bankClient.userAccounts.get( i ).getVerified());
 				System.out.println( "\taccountBalance: " + bankClient.userAccounts.get(i).getBalance() );
 			}
 		}
@@ -33,7 +33,7 @@ public class Print {
 
 			System.out.println( "\taccountNumber: " + bankClient.userAccounts.get(i).getAccountNumber());
 			System.out.println( "\taccountType: " + bankClient.userAccounts.get(i).getClass());
-			System.out.println( "\taccountVerified: " + bankClient.accountVerified.get( i ) );
+			System.out.println( "\taccountVerified: " + bankClient.userAccounts.get( i ).getVerified() );
 			System.out.println( "\taccountBalance: " + bankClient.userAccounts.get(i).getBalance() );
 		}
 	}

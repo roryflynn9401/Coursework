@@ -11,6 +11,6 @@ public class Verification {
 
 	public void verify(BankClient bankClient, int accountNumber, boolean verified){
 
-		for( int i = 0; i < bankClient.userAccounts.size(); ++i ) if( bankClient.userAccounts.get(i).getAccountNumber() == accountNumber ) bankClient.accountVerified.set( i , verified );
+		for( int i = 0; i < bankClient.userAccounts.size(); ++i ) if( bankClient.userAccounts.get(i).getAccountNumber() == accountNumber ) bankClient.userAccounts.get(i).setVerified(verified);
 	}
 }

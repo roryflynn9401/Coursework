@@ -36,7 +36,7 @@ public class CreateAccount {
 	
 	public int executeAddAccount(BankClient bankClient, String accountType){
 		if(accountType.toLowerCase() ==  "savings") {
-			SavingsAccount temp = new SavingsAccount(0);
+			SavingsAccount temp = new SavingsAccount(0, false);
 			bankClient.userAccounts.add(temp);
 		}
 		/* bankClient.accountNumbers.add( accountCount.incrementAndGet() );
